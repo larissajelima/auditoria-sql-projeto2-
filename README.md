@@ -42,4 +42,4 @@ O sistema gera automaticamente:
 - Relatório executivo consolidado em Excel
 
 ## 👨‍💻 Autor
-[Seu Nome] - Unidade 2: SQL e Bancos de Dados para Auditoria
+Larissa Lima - Unidade 2: SQL e Bancos de Dados para Auditoria
