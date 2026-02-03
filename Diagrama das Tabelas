@@ -1,0 +1,26 @@
+┌─────────────────────┐
+│    fornecedores     │
+├─────────────────────┤
+│ id (PK)             │
+│ nome                │
+│ cnpj                │
+│ categoria           │
+│ ativo               │
+└─────────────────────┘
+         ↑
+         │
+         │ (fornecedor_id)
+         │
+┌─────────────────────┐      ┌─────────────────────┐
+│    pagamentos       │      │    departamentos    │
+├─────────────────────┤      ├─────────────────────┤
+│ id (PK)             │      │ id (PK)             │
+│ data                │      │ nome                │
+│ fornecedor_id (FK)  │──┐   │ gestor              │
+│ departamento_id (FK)├──┼──→│ orcamento           │
+│ valor               │  │   └─────────────────────┘
+│ tipo_pagamento      │  │
+│ status              │  │
+│ aprovador           │  │
+└─────────────────────┘  │
+                         │ (departamento_id)
